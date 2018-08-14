@@ -151,6 +151,7 @@ input[type="radio"].visually-hidden {
 .slider {
   position: relative;
   background-color: #eeeeee;
+  margin-bottom: 80px;
 }
 .slider-item {
   display: none;
@@ -160,9 +161,9 @@ input[type="radio"].visually-hidden {
   padding-bottom: 80px;
 }
 .slider-item:nth-child(1) {
-  /* display: block; */
+  display: block;
   background-image: url("../img/slide1.png");
-  background-position: 93% 18px;
+  background-position: 94% 8px;
   background-repeat: no-repeat;
 }
 .slider-item:nth-child(2) {
@@ -172,7 +173,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 .slider-item:nth-child(3) {
-  display: block;
+  /* display: block; */
   background-image: url("../img/slide3.png");
   background-position: 100% 20px;
   background-repeat: no-repeat;
@@ -240,4 +241,309 @@ input[type="radio"].visually-hidden {
   background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
+}
+/*  Стили для main*/
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 3px rgba(238,238,238);
+  margin-bottom: 40px;
+}
+.feature-item {
+  padding: 0;
+  margin: 0;
+  margin-right: 100px;
+  margin-bottom: 80px;
+  width: 300px;
+}
+.feature-item:nth-child(3n) {
+  margin-right: auto;
+}
+.feature-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+.feature-item p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+.feature-item img {
+  margin-bottom: 21px;
+}
+.feature-item-button-1,
+.feature-item-button-2,
+.feature-item-button-3 {
+  min-width: 160px;
+}
+.feature-item-button-2 {
+  background-color: #00ca74;
+}
+.feature-item-button-3 {
+  background-color: #efc84a;
+}
+.feature-item-button-2:hover,
+ .feature-item-button-2:focus {
+  background-color: #00bc6c;
+}
+.feature-item-button-2:active {
+  background-color: #00aa62;
+}
+.feature-item-button-3:hover,
+ .feature-item-button-3:focus {
+  background-color: #eab534;
+}
+.feature-item-button-3:active {
+  background-color: #e5a722;
+}
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 3px rgba(238,238,238);
+}
+.about-us h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 3px;
+  margin-bottom: 26px;
+  margin-top: 16px;
+}
+.advantages {
+  margin: 0;
+  padding: 0;
+  width: 760px;
+  margin-right: 20px;
+  margin-top: 22px;
+  margin-bottom: 45px;
+}
+.advantages p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+  margin-bottom: 34px;
+}
+.advantages strong {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+.advantages-list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.advantages-list li {
+  margin: 0;
+  margin-bottom: 30px;
+}
+.advantages-list li {
+  position: relative;
+}
+.advantages-list li::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  top: 50%;
+  left: -35px;
+  background-color: #fb565a;
+}
+.statistics {
+  width: 360px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
+}
+.statistics img {
+  width: 360px;
+  height: 208px;
+  margin-bottom: 16px;
+}
+.statistics-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.statistics h3 {
+  padding-left: 20px;
+}
+.statistics-list li {
+  width: 120px;
+  margin: 0;
+  padding: 0;
+}
+.statistics-list dt {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+  padding-top: 8px;
+  padding-bottom: 19px;
+  padding-left: 2px;
+}
+.statistics-list span {
+  font-size: 26px;
+  vertical-align: text-top;
+}
+.statistics-list dd,
+.statistics-list dl {
+  margin: 0;
+  padding: 0;
+}
+.product-links {
+  margin-bottom: 80px;
+}
+.product-links-list ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto 0;
+  padding: 0;
+  box-shadow: 0 3px rgba(238,238,238);
+}
+.product-links-list li {
+  position: relative;
+  width: 260px;
+  height: 175px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.2
+}
+.product-links-list li:hover,
+.product-links-list li:focus {
+  opacity: 1;
+}
+.product-links-list li:active {
+  opacity: 0.1;
+}
+.product-links-list li::after {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 2px;
+  background-color: #eeeeee;
+  top: 68px;
+  right: -21px;
+}
+.product-links-list li:nth-child(4n)::after {
+  display: none;
+}
+.map-and-contacts {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 1200px;
+  min-height: 415px;
+  margin-bottom: 67px;
+}
+.address-and-contacts {
+  position: absolute;
+  width: 320px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 47px;
+  padding-bottom: 44px;
+  margin-top: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  z-index: 1;
+  background-color: #ffffff;
+}
+.map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.address-and-contacts h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  padding: 0;
+  margin:0;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+.address-and-contacts span {
+  margin-top: 10px;
+}
+.our-address {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 38px;
+}
+.button-contacts {
+  min-width: 219px;
+}
+/*  Стили для футера*/
+.footer-social {
+  display: flex;
+  margin-bottom: 70px;
+}
+.footer-social ul {
+  display: flex;
+  width: 260px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  margin-right: 136px;
+  padding: 0;
+}
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+.social-button:hover,
+.social-button:focus {
+  background-color: #e74246;
+}
+.social-button:hover path,
+.social-button:focus path {
+  fill: #ffffff;
+}
+.social-button:active {
+  background-color: #d7373b;
+}
+.social-button:active path {
+  fill: #e37376;
+}
+.footer-info {
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+.footer-info b {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.footer-info p {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
 }
