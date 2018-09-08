@@ -18,10 +18,10 @@
             </a>
             <div class="main-navigation-wrapper">
                 <ul class="site-navigation">
-                  <li><a href="studio.html">Студия</a></li>
-                  <li><a href="clients.html">Клиенты</a></li>
+                  <li><a href="#">Студия</a></li>
+                  <li><a href="#">Клиенты</a></li>
                   <li><a href="catalog.html">Магазин</a></li>
-                  <li><a href="contacts.html">Контакты</a></li>
+                  <li><a href="#">Контакты</a></li>
                 </ul>
                 <ul class="user-navigation">
                   <li><a class="cart-link" href="#">Корзина</a></li>
@@ -33,11 +33,15 @@
         <section class="slider">
           <div class="container">
               <h2 class="visually-hidden">Преимущества</h2>
+              <input type="radio" id="slider-btn-1" name="slider-btn" checked>
+              <input type="radio" id="slider-btn-2" name="slider-btn">
+              <input type="radio" id="slider-btn-3" name="slider-btn">
               <div class="slider-controls">
-                <i class="active"></i>
-                <i></i>
-                <i></i>
+                    <label for="slider-btn-1"></label>
+                    <label for="slider-btn-2"></label>
+                    <label for="slider-btn-3"></label>
               </div>
+
                 <ul class="slider-list">
                   <li class="slider-item">
                     <h3>Долго, дорого,<br> скрупулезно.</h3>
@@ -189,5 +193,29 @@
         </div>
     </div>
   </footer>
+
+  <section class="modal-write-us">
+        <h2>Напишите нам</h2>
+        <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-name-email">
+              <p>
+                  <label class="label-user-name" for="form-name">Ваше имя:</label>
+                  <input class="form-user-name" id="form-name" type="text" name="userName" pattern="[A-Za-zА-Яа-яЁё]"
+                   title="Введите буквы русского или латинского алфавита" placeholder="Имя Фамилия" required>
+              </p>
+              <p>
+                  <label class="label-user-email" for="form-email">Ваш e-mail:</label>
+                  <input class="form-user-email" id="form-email" type="email" name="userEmail"
+                   placeholder="email@example.com" required>
+              </p>
+          </div>
+          <label class="label-user-message" for="form-message">Текст письма:</label>
+          <textarea id="form-message" name="user-message" placeholder="В свободной форме" required></textarea>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <script src="script/main.js"></script>
 </body>
 </html>
