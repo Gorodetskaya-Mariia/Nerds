@@ -29,7 +29,7 @@
             </div>
         </nav>
       </div>
-
+<!-- реализация слайдера -->
         <section class="slider">
           <div class="container">
               <h2 class="visually-hidden">Преимущества</h2>
@@ -66,6 +66,7 @@
   <main>
   <div class="container">
     <h1 class="visually-hidden">Нердс</h1>
+    <!-- виды услуг -->
     <section class="features">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="features-list">
@@ -89,6 +90,7 @@
         </li>
       </ul>
     </section>
+    <!-- секция о компании -->
     <section class="about-us">
       <h2 class="visually-hidden">О нас</h2>
           <div class="advantages">
@@ -102,6 +104,7 @@
                       <li>Слайдшоу и видео для корпоративных презентаций</li>
                 </ul>
           </div>
+    <!-- статистика компании -->
           <div class="statistics">
             <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип 'Нердс'">
             <h3>С 2004 года любим точность во всем:</h3>
@@ -127,6 +130,7 @@
             </ul>
           </div>
     </section>
+    <!-- список клиентов -->
     <section class="product-links">
       <h2 class="visually-hidden">Наши шаблоны</h2>
       <div class="product-links-list">
@@ -151,6 +155,7 @@
     </div>
     </section>
   </div>
+  <!-- карта и контакты -->
     <section class="map-and-contacts">
       <h2 class="visually-hidden">Как с нами связаться</h2>
       <div class="container">
@@ -169,7 +174,7 @@
       </iframe>
     </section>
   </main>
-
+<!-- ссылки на социальные сети -->
   <footer>
     <div class="container">
         <div class="footer-social">
@@ -193,14 +198,14 @@
         </div>
     </div>
   </footer>
-
+<!-- модальное окно "Напишите нам" -->
   <section class="modal-write-us">
         <h2>Напишите нам</h2>
         <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-name-email">
               <p>
                   <label class="label-user-name" for="form-name">Ваше имя:</label>
-                  <input class="form-user-name" id="form-name" type="text" name="userName" pattern="[A-Za-zА-Яа-яЁё]"
+                  <input class="form-user-name" id="form-name" type="text" name="userName" pattern="^[А-Яа-яЁё-a-zA-Z\s]+$"
                    title="Введите буквы русского или латинского алфавита" placeholder="Имя Фамилия" required>
               </p>
               <p>
