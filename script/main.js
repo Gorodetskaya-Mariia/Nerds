@@ -54,8 +54,12 @@ window.addEventListener("keydown", function(evt) {
 var swiper = new Swiper(".swiper-container", {
   pagination: {
     el: ".swiper-pagination",
-    type: "fraction"
-  },
+		type: "fraction"
+	},
+	autoplay: {
+		delay: 2000,
+	},
+	loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
