@@ -427,7 +427,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
-  border: none;
+	border: none;
 }
 
 .range-filter {
@@ -499,7 +499,7 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls input {
-  width: 60px;
+  width: 70px;
   padding: 10px 10px;
   margin-left: 10px;
 
