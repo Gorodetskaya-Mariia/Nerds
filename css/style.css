@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+a.disabled {
+	cursor: not-allowed;
+}
+
 .container {
   width: 1200px;
   box-sizing: border-box;
