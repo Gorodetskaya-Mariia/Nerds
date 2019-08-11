@@ -22,5 +22,5 @@
 - noUiSlider.js library was chosen to implement choosing of cost on «Catalog» page.
 - Datepicker.js library was chosen to pick date in the modal window.
 - CSS Animations were used for beautiful animations not only of buttons, but also for displaying more information about products on «Catalog» page.
-- You can find links to other my projects in a section before «Contacts» on main page.
 - A map in contacts section on main page is an interactive Google Map.
+- You can find links to other my projects in a section before «Contacts» on main page.
